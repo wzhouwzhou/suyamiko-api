@@ -20,6 +20,7 @@ A bridge to the world of moe (and other services provided by the suya.moe API)!
 `npm install suyamiko-api`
 
 https://api.suya.moe/cdn.gif?awoo=SGs0VlhIbVBiZQ.gif
+
 ![awoo](https://api.suya.moe/cdn.gif?awoo=SGs0VlhIbVBiZQ.gif)
 
 The Suyamiko API is private, thus this package is not meant to be used by people who do not have prior authorization to use it.
