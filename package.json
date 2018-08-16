@@ -1,0 +1,27 @@
+{
+  "name": "suyamiko-api",
+  "version": "1.0.0",
+  "description": "A suyamiko/suya.moe api client",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wzhouwzhou/suyamiko-api.git"
+  },
+  "keywords": [
+    "suya.moe",
+    "suyamiko",
+    "api"
+  ],
+  "author": "William Zhou",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/wzhouwzhou/suyamiko-api/issues"
+  },
+  "homepage": "https://github.com/wzhouwzhou/suyamiko-api#readme",
+  "dependencies": {
+    "easypathutil": "^1.0.2"
+  }
+}

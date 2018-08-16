@@ -1,0 +1,7 @@
+exports.name = 'neko';
+exports.run = async function (nsfw) {
+  let url = `${this.requester.base_url}/neko`;
+  if (nsfw === true) url += '?nsfw=1'
+  const result = await this.requester.json(url);
+  return `${this.requester.base_url}${result.url}`;
+};

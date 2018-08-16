@@ -1,0 +1,7 @@
+exports.name = 'hug';
+exports.run = async function () {
+  const url = `${this.requester.base_url}/hug`;
+  const result = await this.requester.json(url);
+  console.log(`${this.requester.base_url}${result.url}`)
+  return `${this.requester.base_url}${result.url}`;
+};
