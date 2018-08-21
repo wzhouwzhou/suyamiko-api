@@ -8,7 +8,7 @@ exports.endpoints = {};
 for (const endpoint of endpoints) {
   try {
     const exported = require(`./endpoints/${endpoint}.moe`);
-    if (typeof exported.run === 'function') throw new Error(`Endpoint file ${endpoint} has no run function.`);
+    if (typeof exported.run !== 'function') throw new Error(`Endpoint file ${endpoint} has no run function.`);
     exports.endpoints[endpoint] = exported;
   } catch (err) {
     exports.endpoints[endpoint] = { name: endpoint, run: EndpointFactory(endpoint) };
