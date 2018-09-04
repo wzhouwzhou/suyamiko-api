@@ -17,7 +17,7 @@
 
 A bridge to the world of moe (and other services provided by the suya.moe API)!
 
-`npm install suyamiko-api`
+`npm install suyamiko-api@1.0.1`
 
 https://api.suya.moe/cdn.gif?awoo=SGs0VlhIbVBiZQ.gif
 
