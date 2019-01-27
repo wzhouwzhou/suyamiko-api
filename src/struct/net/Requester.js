@@ -2,6 +2,7 @@
 Reflect.defineProperty(exports, '__esModule', { value: true });
 
 const https = require('https');
+const qs = require('querystring');
 
 const option_store = new WeakMap;
 
@@ -16,6 +17,10 @@ const Requester = class Requester {
   set_auth(auth) {
     option_store.get(this).headers.Authorization = auth;
     return this;
+  }
+
+  get query() {
+    return qs.stringify;
   }
 
   buffer(path, headers = {}) {
@@ -35,6 +40,7 @@ const Requester = class Requester {
         return response.on('end', () => {
           const buf = Buffer.concat(chunks);
           let message = buf.toString('utf-8');
+          if (process.env.SUYAMIKOAPI_DEBUG) console.log(message); // eslint-disable-line no-console
           try {
             message = JSON.parse(message);
           } finally {
