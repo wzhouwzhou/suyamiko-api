@@ -1,6 +1,6 @@
 exports.name = 'cat';
-exports.run = async function () {
+exports.run = async function run() {
   const url = `${this.requester.base_url}/cat`;
   const result = await this.requester.json(url);
-  return result.url;
+  return `${this.requester.base_url}${result.url}`;
 };
